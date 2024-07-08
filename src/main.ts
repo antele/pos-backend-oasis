@@ -7,7 +7,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.setGlobalPrefix('api')
   app.enableCors({
-    origin: 'https://cliente-frontend-oasis.onrender.com'    
+    origin: 'https://cliente-frontend-oasis.onrender.com' , 
     credentials:true
   })
   app.useGlobalPipes(
